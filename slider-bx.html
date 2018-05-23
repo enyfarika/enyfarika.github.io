@@ -9,39 +9,36 @@
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=8" /><![endif]--> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-	<title>Smada '97 Jombang</title>
+	<title>Home | beulah HTML5 Template</title>
 	<meta name="description" content="description goes here">
 	<meta name="keywords" content="html5, template, theme, themeforest, corporate, portfolio, business, css3, forest, arrowthemes">
 	<meta name="robots" content="index, follow" />
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="css/skins/azure/style.css">
+    <link rel="stylesheet" href="css/skins/crimson/style.css">
     <link rel="stylesheet" href="css/light/general.css">
-	
-	
 	<!--[if IE 9]><link rel="stylesheet" href="css/light/style.ie9.css"/><![endif]-->
     <!--[if IE 8]><link rel="stylesheet" href="css/light/style.ie8.css"/><![endif]-->
 	<!--[if IE 7]><link rel="stylesheet" href="css/light/style.ie7.css"/><![endif]-->
 	<!--[if IE 6]><link rel="stylesheet" href="css/light/style.ie6.css"/><![endif]-->
 	
 	<script src="./js/libs/modernizr-2.5.3.min.js"></script>
-	
-</head>
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
 
+<body>
 <div id="container">
-
 	<!--begin Top section-->
 	<!-- Add the 'open' class to top-section to keep it open-->
 	<section class="top-section">
 			<div class="inner">
-				<p>Apakah anda terdaftar di web ini <a href="#">Daftar</a></p>
-				<div class="csbutton-dark show-top cancel">Batal</div>
-				<form  autocomplete="off" id="login">
-						<label id="username_label">Nama Pengguna</label>
-						<input id="top-username" title="Masukkan Nama Pengguna" type="text" name="username" class="top-input" size="15" data-message="please enter a username" />
-						<label id="password_label">Kata sandi</label>
-						<input id="top-password" title="Masukkan kata sandi" type="password" name="password" class="top-input"  size="14" data-message="please enter a valid password"/>
-						<input type="submit" name="submit" class="csbutton-dark small submit" id="submit_button" value="Masuk" />
+				<p>Are you a member? sign in or take a minute to <a href="#">sign up</a></p>
+				<div class="csbutton-dark show-top cancel">Cancel</div>
+				<form  autocomplete="off">
+						<label id="username_label">Username</label>
+						<input id="top-username" title="Please enter your username" type="text" name="username" class="top-input" size="15" />
+						<label id="password_label">Password</label>
+						<input id="top-password" title="Please enter your password" type="password" name="password" class="top-input" size="14" />
+						<input type="submit" name="submit" class="csbutton-dark small submit" id="submit_button" value="Login" />
 				</form>
 			</div>
 	</section>
@@ -60,7 +57,7 @@
 	<div class="top-overlay">
 		<div id="top-date"></div>
 			<div class="top-contact">
-			<div id="top-member" class="show-top top-member"  title="Masuk" >Member Login</div>
+			<div id="top-member" class="show-top top-member"  title="Member access" >Member login</div>
 		</div>
 		<div class="top-links"  id="slide">
 			<a class="social-rss" href="http://themeforest.net/feeds/users/arrowthemes.atom" title="rss feed"></a> 
@@ -75,7 +72,7 @@
 	
 	<!--begin logo -->
 	<div class="logo-img">
-		<a href="index.html"><img src="./images/logo.png" alt="Utama" /></a>
+		<a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
 	</div>
 	
 <!--begin bar nav section -->	
@@ -85,9 +82,7 @@
 	<div class="nav-inner">
 	<nav id="menu">
 			<ul class="menu">
-				<li><a href="#"><span>Sampul</span></a>
-				<li><a href="#"><span>Blog</span></a>
-				<li><a href="#"><span>Utama</span></a>
+				<li><a href="#"><span>Home</span></a>
 				<div><ul>
 						<li><a href="./index7.html"><span>Home with Blog</span></a></li>
 						<li><a href="./index8.html"><span>Home with Blocks</span></a></li>
@@ -97,7 +92,7 @@
 						<li><a href="./index13.html"><span>Static Content</span></a></li>
 					</ul></div>	
 				</li>
-				<li><a href="#"><span>Isi</span></a>
+				<li><a href="#"><span>Features</span></a>
 						<div><ul>     				
 							<li><a  href="./colors.html"><span>Color Styles</span></a></li>
 							<li><a class="parent" href="#"><span>Page Layout</span></a>
@@ -180,7 +175,7 @@
 						<li><a href="./switch.html"><span>Display Switch</span></a></li>
 						</ul></div>
 					</li>
-				<li><a href="#"><span>Tajuk</span></a>
+				<li class="current"><a href="#"><span>Sliders</span></a>
 						<div><ul>
 						<li><a class="parent" href="#"><span>WOW Slider</span></a>
 							<div>
@@ -236,7 +231,7 @@
 						<li><a href="./pricing.html"><span>Pricing Tables</span></a></li>
 						</ul></div>
 					</li>
-				<li><a href="./contact.html"><span>Kopi Darat</span></a></li>
+				<li><a href="./contact.html"><span>Contact Us</span></a></li>
 			</ul>
 		</nav>
 </div>
@@ -250,145 +245,76 @@
         	    <div class="header-wrapper">
                 <div class="cleared reset-azure"></div>
 				
-						<!-- jquery slider. To customize the slider functionality edit the custom.js file -->
-					<div class="images">
-						
-
+						<!-- bx slider. To customize the slider functionality edit the custom.js file -->
+					<ul id="bx-slide">
+					
 						<!--slide 1-->
-						<div class="slide">
-							
+						<li>
 							<span class="slide-text">
-							 <span class="show-title">Seduluran Saklawase </span>
-							 <span class="show-text">Smada '97 Jombang meruapakan wadah alumnioper and client in mind, using the latest HTML5 Technology and CSS3 effectsuring that your site stays at par with the latest technologies on the web. It comes laden with a shuttle load of amazing features, a crisp pixel design suitable for your business or corporate site and much much more.</span>
+							 <span class="show-title">Beulah HTML5 Template </span>
+							 <span class="show-text">Beulah is a clean and suave HTML5 Template design that has been engineered using HTML5 and CSS3 ensuring that your site stays at par with the latest technologies on the web. It comes laden with a shuttle load of amazing features, a crisp pixel design suitable for your business or corporate site and much much more.</span>
 							
-							 <a class="csbutton slider-action" href="#" >Lihat Daftar Teman</a>
+							 <a class="csbutton slider-action" href="#" >Get Started</a>
 							 
 							</span>
 							<span class="slide-object">
-								<span class="header-image border" style="background-image: url('./demo/showcase/1.jpg')"></span>
+								<span class="header-image" style="background-image: url('./demo/showcase/slide_23.png')"></span>
 							</span>
-						</div>
+						</li>
 						
 						
 						<!--slide 2-->
-						<div class="slide">
+						<li>
 							<span class="slide-text">
-							 <span class="show-title">Winter is here</span>
+							 <span class="show-title">Ripe and Ready</span>
 							 <span class="show-text">Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Stet clita kasd gubergren</span>
 							
 							 <a class="csbutton slider-action" href="#" >Get Started</a>
 							 
 							</span>
 							<span class="slide-object">
-								<span class="header-image border" style="background-image: url('./demo/showcase/2.jpg')"></span>
+								<span class="header-image" style="background-image: url('./demo/showcase/slide_22.png')"></span>
 							</span>
-						</div>
+						</li>
 												
 						<!--slide 3-->
-						<div class="slide">
+						<li>
 							
 							<span class="slide-text">
-							 <span class="show-title">Inspired by nature</span>
+							 <span class="show-title">It takes two to tango </span>
 							 <span class="show-text">Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Stet clita kasd gubergren</span>
 							
 							  <a class="csbutton slider-action" href="#" >Quick Start</a>
 							 
 							</span>
 							<span class="slide-object">
-								<span class="header-image border" style="background-image: url('./demo/showcase/3.jpg')"></span>
+								<span class="header-image" style="background-image: url('./demo/showcase/slide_21.png')"></span>
 							</span>
-						</div>
+						</li>
 						
 						<!--slide 4-->
-						<div class="slide">
+						<li>
 							<span class="slide-text">
-							 <span class="show-title">Beyond the red Sky</span>
+							 <span class="show-title">Sip. Relax. Unwind.</span>
 							 <span class="show-text">Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Stet clita kasd gubergren</span>
 							
-							 <a class="csbutton slider-action" href="#" >Get Started</a>
+							 <a class="csbutton slider-action" href="http://codecanyon.net/item/elitepack-css3-display-screens/578020?ref=arrowthemes" >Get Started</a>
 
 							</span>
 								<span class="slide-object">
-								<span class="header-image border" style="background-image: url('./demo/showcase/4.jpg')"></span>
+								<span class="header-image" style="background-image: url('./demo/showcase/slide_24.png')"></span>
 							</span>
-						</div>
+						</li>
 						
-						<!--slide 5-->
-						<div class="slide">
-							<span class="slide-text">
-							 <span class="show-title">The sun will shine again</span>
-							 <span class="show-text">Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Stet clita kasd gubergren</span>
-							
-							 <a class="csbutton slider-action" href="#" >Get Started</a>
-
-							</span>
-								<span class="slide-object">
-								<span class="header-image border" style="background-image: url('./demo/showcase/5.jpg')"></span>
-							</span>
-						</div>							
-						
-						
-						<!--slide 6-->
-						<div class="slide">
-							<span class="slide-text">
-							 <span class="show-title">Adventure is out there</span>
-							 <span class="show-text">Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Stet clita kasd gubergren</span>
-							
-							 <a class="csbutton slider-action" href="#" >Get Started</a>
-
-							</span>
-								<span class="slide-object">
-								<span class="header-image border" style="background-image: url('./demo/showcase/slide_10.png')"></span>
-							</span>
-						</div>	
-
-						<!--slide 7-->
-						<div class="slide">
-							<span class="slide-text">
-							 <span class="show-title">HTML5 Video Support</span>
-							 <span class="show-text">Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Stet clita kasd gubergren</span>
-							
-							 <a class="csbutton slider-action" href="#" >Watch Screencast</a>
-
-							</span>
-							<span class="slide-object">
-								 <span class="header-image">
-								 <span class="video-js-azure">
-										<video class="video-js" width="450" height="280" controls preload poster="./video/envato_p_h.png">
-										  <source src="./video/envato_sting.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-										  <source src="./video/envato_sting.webm" type='video/webm; codecs="vp8, vorbis"' />
-										  <source src="./video/envato_sting.ogv" type='video/ogg; codecs="theora, vorbis"' />
-										  <object id="flash_fallback_1" class="vjs-flash-fallback" width="450" height="280" type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" >
-											<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
-											<param name="allowfullscreen" value="true" />
-											<param name='wmode' value='opaque'>
-											<param name="flashvars" value='config={"playlist":["http://demo.arrowthemes.com/video/envato_l.png", {"url": "http://demo.arrowthemes.com/video/envato_sting.mp4","autoPlay":false,"autoBuffering":true}]}' />
-											<img src="./video/envato_p_h.png" width="450" height="280" alt="Poster Image"
-													  title="No video playback capabilities." />
-										  </object>
-										</video>
-
-									  </span>
-								 </span> 
-								 </span>
-						</div>
-					</div>
+								</ul>
 					
-					<!-- the tabs -->
-					<div class="slidetabs" id="slidetab">
-						<a href="" title="Seduluran Saklawase"></a>
-						<a href="" title="2Winter is here"></a>
-						<a href="" title="3Inspired by Nature"></a>
-						<a href="" title="4Beyond the red Sky"></a>
-						<a href="" title="The sun will shine again"></a>
-						<a href="" title="Adventure is out there"></a>
-						<a href="" title="Video Support"></a>
-					</div>
+
             </div>
  </section>
-  
-  <div class="header-shadow"></div>
+    
  
+ <div class="header-shadow"></div>
+        
     </div>
 	</header>
 	
@@ -398,8 +324,8 @@
 	
 	<section id="breadcrumbs">
 				<span class="breadcrumbs home">
-					<a class="pathway" href="index.html">Sampul</a> 
-					<span class="no-link">Isi sampul</span>
+					<a class="pathway" href="index.html">Home</a> 
+					<span class="no-link">sweet home</span>
 				</span>
 	</section>
 	
@@ -407,10 +333,10 @@
 				<section class="spot-bg">
 						<div class="spotlight">
 						<div class="tagline">
-						<p>Smada '97 Jombang meruapakan wadah alumnioper and client in mind, using the latest HTML5 Technology and CSS3 effects</p>
+						<p>Beulah HTML Template has been design with the developer and client in mind, using the latest HTML5 Technology and CSS3 effects</p>
 						</div>
 						<div class="action" id="spot-action">
-						<a class="csbutton spot-action" href="#" title="Lihat daftar teman" >Lihat</a>
+						<a class="csbutton spot-action" href="#" title="It only takes a few minutes" >Get Started</a>
 						</div>
 					</div>
 				</section>
@@ -438,11 +364,11 @@
 							<div class="postcontent">
 							
 							<div  class="block-divide" style="float: left; width: 46%; margin-right: 20px; margin-bottom: 20px; padding-right: 20px;">
-							<h3><strong>Light-bulb</strong> vvvvmoments</h3>
+							<h3><strong>Light-bulb</strong> moments</h3>
 							<p><img width="48" height="48" alt="" src="./demo/tip.png" style="float:left;" />Magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Traesent rutrum sapien ac felis. Phasellus elementum dolor.</p>
 							</div>
 							<div style="float: left; width: 46%;">
-							<h3><strong>vvvvInspired</strong> by nature</h3>
+							<h3><strong>Inspired</strong> by nature</h3>
 							<p><img width="48" height="48" alt="" src="./demo/leaf.png" style="float:left;" />Magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Traesent rutrum sapien ac felis. Phasellus elementum dolor.</p>
 							</div>
 							
@@ -462,7 +388,7 @@
 
 							<div id="nav1">
 										<ul class="css-tabs white-top">
-											<li><a href="#">Tabulasi 1</a></li>
+											<li><a href="#">Rich Typography</a></li>
 											<li><a href="#">Dynamic Portfolio</a></li>
 											<li><a href="#">Multiple Colors</a></li>
 											<li><a href="#">Cross Platform</a></li>
@@ -473,7 +399,7 @@
 									<div id="panes-top" class="css-panes white-top">
 											<!--tab 1-->
 											<div>
-											<h3 class="dotted"> Kaya Typografi</h3>
+											<h3 class="dotted"> Rich typography to match your design</h3>
 												<p>
 													<img src="./demo/typo-color.png" style="float: left; margin: 0 20px" alt="Typography"/> Maecenas at odio. Nunc laoreet lectus vel ante. Nullam imperdiet. Sed justo dolor, mattis eu, euismod sed, tempus a, nisl. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sed dolor. Etiam eget quam ac nibh pharetra adipiscing. Nullam vitae ligula. Sed sit amet leo sit amet arcu mollis ultrices. 
 												</p>
@@ -503,15 +429,14 @@
 											<div>
 												<h3 class="dotted">Cross browser compatibility</h3>
 												<p>
-												<img src="./demo/platform.png" style="float: left; margin: 0 20px" alt="Cross-platform"/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra, leo sit amet auctor fermentum, risus lorem posuere tortor, in accumsan purus magna imperdiet sem.	Suspendisse enim. Pellentesque facilisis aliquam enim. Maecenas facilisis molestie lectus. Sed ornare ultricies tortor. Vivamus nibh metus, faucibus quis, semper ut, dignissim id, diam. </p>		
+												<img src="./demo/platform.png" style="float: left; margin: 0 20px" alt="Cross-platform"/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra, leo sit amet auctor fermentum, risus lorem posuere tortor, in accumsan purus magna imperdiet sem.	Suspendisse enim. Pellentesque facilisis aliquam enim. Maecenas facilisis molestie lectus. Sed ornare ultricies tortor. Vivamus nibh metus, faucibus quis. </p>		
 												<a href="#" class="csbutton-color" style="float: right">Think you like it? Buy now</a>									
 											</div>
 										</div>
 									<div class="cleared"></div>
 							<hr/>
-							<br/>
 							<div class="slogan">
-								<p>Alumni Smada '97 Jombang. Seduluran Saklawase</p>
+								<p>We believe in making the web a better place! We believe</p>
 							</div>
 							
 
@@ -536,7 +461,7 @@
 														<div class="azure blockcontent">
 															<div class="azure-body blockcontent-body">
 															<form class="search" id="search" method="post" action="index.html">
-													<input type="text" onfocus="if(this.value=='Looking for something...') this.value='';" onblur="if(this.value=='') this.value='Looking for something...';" value="Looking for something..." size="30" class="inputazure" maxlength="60" name="searchword" id="search_azure">
+													<input type="text" onfocus="if(this.value=='Looking for something...') this.value='';" onblur="if(this.value=='') this.value='Looking for something...';" value="Looking for something..." size="30" class="inputazure" maxlength="60" name="searchword" id="search_azure">          
 														</form>
 																				<div class="cleared"></div>
 															</div>
@@ -548,23 +473,21 @@
 							<div class="azure block">
 									<div class="azure-body block-body">
 												<div class="bar blockheader">
-															<h3 class="t"><strong>Fitur</strong> Fasilitas</h3>
+															<h3 class="t"><strong>Features</strong> at a glance</h3>
 														</div>
 													<div id="accordion" class="accord1">
-														<h2 class="current">Dewan Guru & Staff</h2>
-														<div class="pane" style="display:block"><p><img width="48" height="48" alt="" src="./demo/html5.png" style="float:left;"> Magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p><br/>
-														<a href="#" class="csbutton-color" style="float: right">Download .ZIP</a>
-														<a href="#" class="csbutton-color" style="float: right">Download .TAR</a>
-														<a href="#" class="csbutton-color" style="float: right">View on Github</a>
+														<h2 class="current">HTML5 and CSS3</h2>
+														<div class="pane" style="display:block"><p><img width="48" height="48" alt="" src="./demo/html5.png" style="float:left;"> Magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Traesent rutrum sapien ac felis. Phasellus elementum dolor.</p>
+														<a href="#" class="csbutton-color" style="float: right">Learn more</a>
 														</div>							
 														
-														<h2 >Fasilitas</h2>
-														<div class="pane"><p><img width="32" height="32" style="float:left;" src="./demo/code.png" alt="">Magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Traesent rutrum sapien ac felis. Phasellus elementum dolor.</p><br/>
+														<h2 >Over 100 Shortcodes</h2>
+														<div class="pane"><p><img width="32" height="32" style="float:left;" src="./demo/code.png" alt="">Magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Traesent rutrum sapien ac felis. Phasellus elementum dolor.</p>
 														<a href="#" class="csbutton-color" style="float: right">Learn more</a>
 														</div>
 
-														<h2>Ekstra Kurikuler</h2>
-														<div class="pane"><p><img width="32" height="32" alt="" src="./demo/color_small.png" style="float:left;">Magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Traesent rutrum sapien ac felis. Phasellus elementum dolor.</p><br/>
+														<h2>Plethora of Colors</h2>
+														<div class="pane"><p><img width="32" height="32" alt="" src="./demo/color_small.png" style="float:left;">Magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Traesent rutrum sapien ac felis. Phasellus elementum dolor.</p>
 														<a href="#" class="csbutton-color" style="float: right">Learn more</a></div>
 														
 											</div>
@@ -619,7 +542,6 @@
         </div>
     </div>
     
-
 	<!--begin footer section -->
 	<footer>
 	<div class="footer">
@@ -629,7 +551,7 @@
 		<div class="f-top-inner"  id="follow-me">
 			<a class="twit-logo" href="http://twitter.com/arrowthemes" title="Follow me"></a>
 			<!--tweet position-->
-				<div class="tweeter_widget"></div>
+   <div class="tweeter_widget"></div>  
 				</div>
 	</section>
 	
@@ -663,6 +585,8 @@
 											<p>Aliquam nec turpis in nunc venenatis aliquam at ut enim. Etiam sed odio vitae dolor feugiat cursus pulvinar</p>
 											<br />
 											</article>
+											<p style="text-align: right;"><a href="#" class="csbutton-dark">Read more</a></p>											
+
 											<div class="cleared"></div>
 										</div>
 									</div>
@@ -680,24 +604,23 @@
 
 										<div class="blockcontent">
 											<div class="blockcontent-body customers">
-											<div class="client"> 
+												<div class="client"> 
 											<img src="./demo/clients/customer-visa.png" alt="visa"> 
 											<img src="./demo/clients/samsung.png" alt="samsung"  > 
 											<img src="./demo/clients/merrill-lynch.png" alt="merrill-lynch" > 
-											</div>											
-											
+											</div>
+					
 											<div class="client "> 
 											<img src="./demo/clients/samsung.png" alt="samsung"  > 
 											<img src="./demo/clients/merrill-lynch.png" alt="merrill-lynch" > 
 											<img src="./demo/clients/customer-visa.png" alt="visa"> 
 											</div>			
-											
+
 											<div class="client "> 
 											<img src="./demo/clients/merrill-lynch.png" alt="merrill-lynch" > 
 											<img src="./demo/clients/customer-visa.png" alt="visa"> 
 											<img src="./demo/clients/samsung.png" alt="samsung"  > 
 											</div>
-
 												<div class="cleared"></div>
 											</div>
 										</div>
@@ -714,7 +637,6 @@
 											<img alt="user" src="./demo/user.png" style="float: left; margin: 30px 15px "/>
 												<blockquote>
 													"I'd like to thank the support team at arrowthemes for the great (and speedy) assistance I received when installing my template. "</blockquote>
-
 													<span style="font-weight: bold; float: right">Bart De Vlaminck</span>
 												<div class="cleared"></div>
 											</div>
@@ -774,7 +696,7 @@
 						</div>
 
                         <div class="cleared"></div>
-                        <p class="page-footer">Copyright &copy; 2011. Designed by <a href="http://themeforest.net?ref=arrowthemes" title="arrowthemes">jokop78</a></p>
+                        <p class="page-footer">Copyright &copy; 2011. Designed by <a href="http://themeforest.net?ref=arrowthemes" title="arrowthemes">arrowthemes</a></p>
 						<span class="bottom-links">
 							<a href="index.html">Home</a>
 							<a href="blog.html">Blog</a>
@@ -797,6 +719,5 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="./js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 	<script src="./js/mylibs/script.js"></script>
-
 </body>	
 </html>
